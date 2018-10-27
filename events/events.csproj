@@ -212,6 +212,10 @@
     <Compile Include="Migrations\201810270554539_override.Designer.cs">
       <DependentUpon>201810270554539_override.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810270603255_popMeetingsTable.cs" />
+    <Compile Include="Migrations\201810270603255_popMeetingsTable.Designer.cs">
+      <DependentUpon>201810270603255_popMeetingsTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -306,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810270554539_override.resx">
       <DependentUpon>201810270554539_override.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810270603255_popMeetingsTable.resx">
+      <DependentUpon>201810270603255_popMeetingsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
