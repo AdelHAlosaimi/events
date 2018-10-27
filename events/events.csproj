@@ -204,10 +204,20 @@
     <Compile Include="Migrations\201810270507487_init-model.Designer.cs">
       <DependentUpon>201810270507487_init-model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810270530450_create-meeting-table.cs" />
+    <Compile Include="Migrations\201810270530450_create-meeting-table.Designer.cs">
+      <DependentUpon>201810270530450_create-meeting-table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810270554539_override.cs" />
+    <Compile Include="Migrations\201810270554539_override.Designer.cs">
+      <DependentUpon>201810270554539_override.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Meeting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -290,6 +300,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201810270507487_init-model.resx">
       <DependentUpon>201810270507487_init-model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810270530450_create-meeting-table.resx">
+      <DependentUpon>201810270530450_create-meeting-table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810270554539_override.resx">
+      <DependentUpon>201810270554539_override.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,8 +1,8 @@
-﻿using System.Data.Entity;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace events.Models
 {
@@ -20,6 +20,8 @@ namespace events.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Meeting> Meetings { get; set; } //to fix empty migrations
+        public DbSet<Genre> Genres { get; set; } // if you wanted to query genres from database
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
